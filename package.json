@@ -1,0 +1,16 @@
+{
+  "name": "raccoon-synthetics",
+  "version": "1.0.0",
+  "description": "Synthetic monitoring with the Checkly CLI: Playwright checks, API checks generated from a JSON file, and email alerts.",
+  "private": true,
+  "scripts": {
+    "test": "checkly test",
+    "test:local": "playwright test",
+    "preview": "checkly deploy --preview",
+    "deploy": "checkly deploy"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "checkly": "^10.4.0"
+  }
+}
